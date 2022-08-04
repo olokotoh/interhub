@@ -120,3 +120,39 @@ slider section
     text-align: center;
     
 }
+
+/*****************************
+Info section
+
+*****************************/
+
+.info-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.info-section .left-section{
+    padding-right: 20px;
+}
+.info-section .left-section p{
+    text-align: justify;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 18px;
+}
+
+.info-section .left-section{
+    align-items: center;
+}
+
+.info-section .right-section{
+    align-items: center;
+}
+.info-section .right-section img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 8px;
+    padding: 0 4px;
+    border-radius: 10px;
+    background: no-repeat;
+}
