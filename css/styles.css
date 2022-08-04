@@ -146,13 +146,23 @@ Info section
 
 .info-section .right-section{
     align-items: center;
+    margin: auto;
+    
 }
-.info-section .right-section img{
+.info-section .right-section a img{
     width: 400px;
-    height: 400px;
+    height:400px;
     object-fit: cover;
-    margin-top: 8px;
-    padding: 0 4px;
-    border-radius: 10px;
-    background: no-repeat;
+    padding-left: 40px;
+    border-radius: 30% 50%;
+    
+}
+info-section .right-section a img:hover{
+    width: 420px;
+    height:420px;
+    object-fit: cover;
+    padding-left: 10px;
+    padding-left: 40px;
+    border-radius: 30% 50%;
+    
 }
