@@ -90,8 +90,8 @@ about section
         width: 90%;
     }
     .image-container img{
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
     }
     .text-container h1{
         font-size: 50px;
@@ -115,3 +115,68 @@ about section
 
     padding-top: 50px ;
 }
+
+.info-items{
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 50px 30px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .6);
+    
+}
+.info-items i{
+    font-size: 30px;
+    margin: 0;
+}
+.info-items h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.info-items hr{
+    width: 46px;
+    height: 3px;
+    background-color: #5fbff9;
+    border: none;
+    margin: 0 auto;
+}
+
+.info-items p{
+    margin-top: 20px;
+}
+.info-items:hover{
+    background-color: #5fbff9;
+}
+
+.info-items:hover i,
+.info-items:hover h3,
+.info-items:hover p{
+    color: #fff;
+}
+.info-items:hover hr{
+    background-color: #fff;
+
+}
+
+/**********************************
+
+team section 
+**********************************/
+.team{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
