@@ -163,3 +163,99 @@ about section
 team section 
 **********************************/
 
+
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #f2f3f7;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.team .team-header{
+    display: flex;
+    background: #f2f3f7;
+    margin: 0;
+}
+
+.team .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+.team .container .card{
+    width: 330px;
+    height: 416px;
+    padding: 60px 30px;
+    margin: 20px;
+    background: #f2f3f7;
+    box-shadow: 0.6EM 0.6em 1.2em #d2dce9,
+                -0.5em -0.5em 1em #ffffff;
+    border-radius: 20px;
+
+}
+.team .container .card .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.team .container .card .content .image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.team .container .card .image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team .container .card .content .contentBx h4{
+    color: #36187d;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.team .container .card .content .contentBx h5{
+    color: #6c758f;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+.team .container .card .content .icon{
+    margin: 20px;
+
+}
+.team .container .card .content .icon a{
+    color: #6c758f;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 10px;
+    transition: color 0.4s;
+
+}
+
+.team .container .card .content .icon a:hover{
+    color: #0196e3;
+
+}
