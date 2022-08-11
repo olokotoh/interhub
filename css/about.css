@@ -27,11 +27,11 @@ about section
 }
 .bg-1{
     flex: 1;
-    background-color: rgb(180, 243, 175);
+    background-color: #40b098;
 }
 .bg-2{
     flex: 1;
-    background-color: rgb(163, 236, 240);
+    background-color:#a3e1d4;
 }
 .about-container{
     width: 85%;
@@ -74,7 +74,7 @@ about section
     text-decoration: none;
     padding: 12px;
     margin: 50px 0px;
-    background-color: rebeccapurple;
+    background-color: #5fbff9;
     border: 2px solid transparent;
     color: white;
     border-radius: 5px;
@@ -83,7 +83,7 @@ about section
 .text-container a:hover{
     background-color: transparent;
     color: black;
-    border: 2px solid rebeccapurple;
+    border: 2px solid lightblue;
 }
 @media screen and (max-width: 1600px){
     .about-container{
@@ -171,7 +171,7 @@ team section
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: #f2f3f7;
+    background: #daf3ed;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -249,7 +249,7 @@ team section
 .team .container .card .content .icon a{
     color: #6c758f;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px;
     transition: color 0.4s;
 
