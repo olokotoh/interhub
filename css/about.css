@@ -329,7 +329,7 @@ testimonials
 ***************************************/
 
 .testimonial{
-    min-height: 100vh;
+    min-height: 500px;
     background-color: #000000;
     float: left;
     width: 100%;
@@ -367,7 +367,7 @@ testimonials
 @keyframes slide{
     0%{
         opacity: 0;
-        transform: translateX(-15px;);
+        transform: translateX(-15px);
     }
     100%{
         opacity: 1;
