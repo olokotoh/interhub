@@ -115,22 +115,5 @@ about section
 
     padding-top: 50px ;
 }
-.learn{
-    height: 100px;
-    width: 100px;
-    background-color: white;
-    
-}
 
-.learn .chess{
-    padding-top: 50px;
-    color: red;
-}
-.learn .chess i{
-    padding-top: 20%;
-}
-
-.learn:hover{
-    background-color: aqua;
-}
 
