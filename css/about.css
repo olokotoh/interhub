@@ -116,6 +116,7 @@ about section
     padding-top: 50px ;
 }
 
+
 .info-items{
     height: 400px;
     margin-top: 20px;
@@ -232,6 +233,7 @@ team section
     text-align: center;
     letter-spacing: 1px;
 }
+
 
 .team .container .card .content .contentBx h5{
     color: #6c758f;
