@@ -3,7 +3,6 @@
         <head>
             <meta charset="UTF-">
             <meta name="viewpoint" content="widt-device-width, initial-scale=1.0">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Contact</title>
             <!--=== CSS Files ====-->
             <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -12,7 +11,7 @@
             <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             -->
             <link rel="stylesheet" href="css/styles.css">
-           <link rel="stylesheet" href="css/contant.css">
+           <link rel="stylesheet" href="css/gallery.css">
 
             <!-- FOnt Awesome-->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -70,102 +69,141 @@
        <!--===== navigation End ======= -->
 
 
-        <!--===== Contact Start======= -->
-
-       <div class="contact-banner">
-        <div class="inner">
-          <a href="#">
-            <img src="images/school.png" alt="placed here" width="1299px" height="299x">
-            
-          </a>
-          <div class="contact-text">
-          
-           
-          </div>
-        </div>
-        </div>
-        <br>
-<!--===== Contact End======= -->
-
-
 <!--===== Contact form start ======= -->
 
-    <div class="cont">
-          <h1> Connect with Us</h1>
-            <p> we would like to attend to you wuth ease, we will appreciate your connections. </p>
-      <div class="contact-box"> 
+    <!-- Header -->
+<div class="header" id="myHeader">
+  <h1>Image Grid</h1>
+  <p>Click on the buttons to change the grid view.</p>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
 
-              <div class="contact-left">
-            <h3>Send your request </h3>
-                  <form>
-                      <div class="input-row">
-                      <div class="input-group">
-                          <label> Name </label>
-                          <input type="test" placeholder=" Your Name">
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="images/test.jpg" style="width:100%">
+    <img src="images/test2.jpg" style="width:100%">
+    <img src="images/test3.jpg" style="width:100%">
+    <img src="images/test.jpg" style="width:100%">
+    <img src="images/test2.jpg" style="width:100%">
+    <img src="images/test2.jpg" style="width:100%">
+    <img src="images/test.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/falls2.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div>
+</div>
 
-                      </div>
+<div class="row">
+  <div class="column">
+    <img src="images/1.jpg" alt="Nature" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/2.jpg" alt="Snow" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/3.jpg" alt="Mountains" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/adekunle.JPG" alt="Lights" onclick="myFunction(this);">
+  </div>
+</div>
 
-                      <div class="input-group">
-                        <label> Email</label>
-                        <input type="test" placeholder="Email">
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
-                    </div>
-                      </div>
-                      <div class="input-row">
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
 
-                        <div class="input-group">
-                          <label> Number </label>
-                            <input type="test" placeholder=" Phone Number">
-  
-                        </div>
-  
-                        <div class="input-group">
-                          <label> Subject</label>
-                          <input type="test" placeholder="Subject">
-  
-                      </div>
-                     
-                        </div>
-                        <label> Message </label>
-                        <textarea rows="5" placeholder="Your Message"> </textarea>
-                        <button>Send</button>
-                  </form>
-            </div>
-
-         <div class="contact-right">
-          <h3> Reach US </h3>
-          <table>
-            <i class="fa-thin fa-circle-phone"></i>
-              <tr>
-
-              <td> Email </td>
-                <td> info@intercontinentalschools.education</td>
-            </tr>
-
-            <tr>
-              <td> Phone-Number </td>
-              <td> 08062212640 | 07015886609 </td>
-            </tr>
-
-            <tr>
-              <td> Address </td>
-              <td> 1A Intercontinental Street, Farm Center, <br>
-                Tarauni LGA, Kano State, NG</td>
-            </tr>
-
-          </table>
-          </div>
-      </div>
-      </div>
-      <!--===== contact form end ====-->
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
 
 
-          <!--===== Google map ====-->
-          <div class="containers">
-            <h1> Embeded Location Map</h1>
-            
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951.4678840186857!2d8.552397110118553!3d11.978946433989966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11ae81991b4939a9%3A0x17b43d841e477ac7!2sINTERCONTINENTAL%20SCHOOLS%2CKANO!5e0!3m2!1sen!2sng!4v1660677890240!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+<script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
+
+
+
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
        <!--===== footer section start ====-->
       <footer class="text-white text-center text-lg-start bg-dark">
         <!-- Grid container -->
