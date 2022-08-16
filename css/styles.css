@@ -6,6 +6,10 @@ a{
     text-decoration: none;
 
 }
+
+.padd-15{
+    padding-top: 40px;
+}
 /***********************
 # sub-header
 
@@ -164,190 +168,138 @@ Info section
     border-radius: 30% 50%;
     
 }
-.info-section .right-section a img:hover{
-    width: 420px;
-    height:420px;
-    object-fit: cover;
-    padding-left: 10px;
-    padding-left: 40px;
-    border-radius: 30% 50%;
-    
-}
 
 /**********************
 Learning Section
 
 **********************/
-.head_part{
-    text-align: center;
-}
-.course_categories{
-    display:inline-block;
-    width:100%;
-    padding:80px 0 50px;
-    margin:0 auto
-}
-    .course_categories h2,.course_categories p{
-        color:black;
-        text-align: center;
-    }
-    .tab-content>.tab-pane{
-        margin:0 auto;
-        width:100%
-    }
-    .nav_tabs_wrap{
-        padding:0;
-        
-        
-    }.nav-tabs{
-        display:inline-block;
-        width:100%;
-        border:none;
-        
-    }
-
-        .nav-tabs>li{
-        padding:0;
-        padding-left: 70px;
-        color:#fff;
-        font-weight:600;
-        text-transform:uppercase;
-        margin:0 30px 30px 0;
-        vertical-align:middle;
-        border:7px solid transparent;
-        text-align:center
-        }
-        .tab-content>.tab-pane{
-
-             margin:0 auto;width:100%;
-             
-             }.nav_tabs_wrap{
-                  padding:0
-                }
-                   .nav-tabs{
-                    display:inline-block;
-                    width:100%;border:none
-                }
-                .nav-tabs>li{
-                    padding:0;
-                    color:#fff;
-                    font-weight:600;
-                    text-transform:uppercase;
-                    margin:0 30px 30px 0;
-                    vertical-align:middle;
-                    border:7px solid transparent;
-                    text-align:center}
-                    .nav-tabs>li,.nav-tabs>li>a .nav_tab_inner i,.nav-tabs>li>a .nav_tab_inner span{
-                        transition:all .3s ease 0s;-webkit-transition:all .3s ease 0s;-moz-transition:all .3s ease 0s;-o-transition:all .3s ease 0s
-                    }nav_tab_inner img{
-                        width: 10px;
-                        height: 10px;
-                    }
-                    .nav-tabs>li>a
-                    {padding:30px 10px 20px;
-                        color:#fff;
-                        font-weight:700;
-                        display:block;
-                        border:none;
-                        width:145px;
-                        height:145px
-                    }
-                    .nav-tabs>li>a .nav_tab_inner{
-                        display:inline-block;
-                        width:100%
-                    }
-                        .nav-tabs>li>a .nav_tab_inner i{
-                        color:#fff;font-size:35px;height:35px;line-height:35px;text-align:left;width:30px
-                    }   .nav-tabs>li>a .nav_tab_inner span
-                    {
-                            display:block;margin-top:15px;font-size:15px;letter-spacing:1px;line-height:20px;font-weight:700;text-transform:uppercase}
-                            .nav-tabs>li.edu{background-color:#ffbf43;border-color:#ffbf43}
-                            .nav-tabs>li.sci{background-color:#96ca4a;border-color:#96ca4a}
-                            .nav-tabs>li.hel{background-color:#e91e63;border-color:#e91e63}
-                            .nav-tabs>li.bus{background-color:#45aef4;border-color:#45aef4}
-                            .nav-tabs>li.art{background-color:#f1594f;border-color:#f1594f}
-                            .nav-tabs>li.foo{background-color:#00bfa5;border-color:#00bfa5}
-                  p{
-                    font-size: 15px;
-                  }     
-                       
-
-**/
-
-.carousel-item{
-    height:650px;
-    min-height: 400px;
-   
-    background-size: cover;
-    
-}
-
-.carousel-inner .carousel-item .carousel-caption .button-icon{
-    
-    width: 90px;
-    height: 90px;
-    padding: 10px 16px;
-    border-radius: 50%;
-    font-size: 12px;
-    text-align: center;
-    color: black;
-    
-}
-
-.carousel-inner .carousel-item .carousel-caption .button-icon:hover{
-    
-     width: 110px;
-    height: 110px;
-    padding: 10px 16px;
-    border-radius: 50%;
-    font-size: 12px;
-    text-align: center;
-    
-}
-
-/*****************************
-Info section
-
-*****************************/
-
-.info-section{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.info-section .left-section{
-    padding-right: 20px;
-}
-.info-section .left-section p{
-    text-align: justify;
-    font-weight: 400;
-    padding-top: 10px;
-    padding-bottom: 18px;
-}
-
-.info-section .left-section{
+.learns {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    background: #16384c;
+    
+}
+.learns .container {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.learns .container .card {
+    position: relative;
+    max-width: 300px;
+    height: 214px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+.learns .container .card:hover{
+    height: 520px;
+}
+.learns .container .card .imageBox {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.3) ;
+
+}
+.learns .container .card .imageBox img{
+    width: 230px;
+    height: 230px;
+    border-radius: 4px;
+    object-fit: cover;
+
+}
+.learns .container .card .content{
+    position: relative;
+    margin-top:-140px ;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
 }
 
-.info-section .right-section{
-    align-items: center;
-    margin: auto;
+.learns .container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+    transition-delay: 0.3s;
+}
+
+/*******************************
+
+Our Partners
+
+*******************************/
+.partner {
+    font-family: Roboto, sans-serif;
     
 }
-.info-section .right-section a img{
-    width: 400px;
-    height:400px;
-    object-fit: cover;
-    padding-left: 40px;
-    border-radius: 30% 50%;
-    
+
+.partner img {
+    width: 100%;
 }
-info-section .right-section a img:hover{
-    width: 420px;
-    height:420px;
-    object-fit: cover;
-    padding-left: 10px;
-    padding-left: 40px;
-    border-radius: 30% 50%;
-    
+.partner .container{
+    max-width: 1040px;
+    margin: 0 auto;
 }
+.partner h1{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+    padding-top: 30px;
+
+}
+.partner h1:after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: #5fbff9;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.partner .logo-slider .item{
+    background-color: #fff;
+    box-shadow: 0 4px 5px #cacaca;
+    border-radius: 8px;
+    padding: 15px;
+    border: 3px sloid #111;
+} 
+.partner .logo-slider .slick-slide{
+    margin: 15px;
+}
+.partner .slick-dot li.slick-active button::before{
+    font-size: 12px;
+}
+.partner .slick-next::before,
+.partner .slick-prev:before{
+    color: #5fbff9;
+    font-size: 24px;
+}
+
+.partner .item:hover{
+    display: block;
+    transition: all ease 0.3s;
+    transform: scale(1.1) translateY(-5px);
+}
+
+
 

@@ -331,7 +331,7 @@ testimonials
 ***************************************/
 
 .testimonial{
-    min-height: 100vh;
+    min-height: 500px;
     background-color: #000000;
     float: left;
     width: 100%;

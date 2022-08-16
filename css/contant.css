@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+.contact-banner .inner img {
+  object-fit: cover;
+}
 
 .cont {
     width: 80;
