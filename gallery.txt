@@ -1,0 +1,51 @@
+<!--=== Gallery section Start ====-->
+               <section>
+                <div class="gallery-header padd-15">
+                    <h1>SOME OF HER WORK</h1>
+                  </div>
+                  <div id="gallery">
+                    <img src="arin1.jpg"/>
+                    <img src="arin2.jpg"/>
+                    <img src="arin3.jpg"/>
+                    <img src="arin4.jpg"/>
+                    <img src="arin5.jpg"/>
+                    <img src="arin6.jpg"/>
+                    <img src="ain7.jpg"/>
+                    <img src="arin8.jpg"/>
+                    <img src="arin9.jpg"/>
+                    <img src="arin1.jpg"/>
+                  </div>
+            </section>
+            <!--=== Gallery section End ====-->
+            
+            
+            
+            .gallery-header {
+    text-align: center;
+    padding: 32px;
+    background: #E0DDDD;
+  }
+  
+  #gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+  }
+  
+  #gallery img {
+    width: 25%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 8px;
+    padding: 0 4px;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 800px) {
+    #gallery img {
+      width: 50%;
+    }
+  }
