@@ -177,7 +177,7 @@ Learning Section
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #16384c;
+    
     
 }
 .learns .container {
@@ -300,6 +300,111 @@ Our Partners
     transition: all ease 0.3s;
     transform: scale(1.1) translateY(-5px);
 }
+
+/**********************************
+
+
+
+Facilities
+
+
+***********************************/
+
+.facilities {
+   
+    color: white;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("/home/aslim/interhub/images/black-bg.jpeg");
+    object-fit: cover;
+
+}
+.facilities .container{
+    width: 90%;
+    margin: 0 auto;
+      
+}
+
+.facilities .container > h1, .facilities .container .title {
+    font-family: tahoma;
+    font-weight: 300 !important;
+    letter-spacing: 1px;
+}
+.facilities .container > h1, .facilities .container > p{
+    text-align: center;
+
+}
+
+.facilities .container .services{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+
+.facilities .container .services .service{
+    margin: 10px;
+    overflow: hidden;
+    padding: 35px 15px;
+    position: relative;
+    text-align: center;
+    transition: background-color 0.3s ease-in,
+                transform 0.3s ease-in;
+    width: 300px;
+
+}
+.facilities .container .services .service:hover{
+
+    transform: translateY(-3px);
+}
+
+.facilities .container .services .service:before{
+    content: '';
+    border-width: 20px;
+    border-style: solid;
+    border-color: rgb(57, 0, 0) whitesmoke rgba(1, 1, 1, 0.4) rgba(0, 0, 0, 0.4);
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    transition: right 0.3s ease-out,
+                top 0.3s ease-out;
+
+}
+.facilities .container .services .service:hover::before{
+    right: 0;
+    top: 0;
+}
+
+.facilities .container .services .service > i{
+    display: block;
+    color: #5fbff9;
+    font-size: 3rem;
+    margin-bottom: 0.9rem;
+    transition: color 0.3s ease-out;
+
+}
+.facilities .container .services .service > .title{
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    line-height: 1.55rem;
+    margin-bottom: 1rem;
+    transition: color 0.3 ease-out;
+}
+
+.facilities .container .services .service > .description{
+    line-height: 1.55rem;
+    margin: 0;
+    transition: color 0.3s ease-out;
+}
+.facilities .container .services .service:hover > i,
+.facilities .container .services .service:hover > .title,
+.facilities .container .services .service:hover > .description {
+    color: whitesmoke;
+}
+
 
 
 
