@@ -299,58 +299,51 @@
 
             </section>
             <!--====== Our partners Ends ========= -->
-            <!--====== Testimonies Starts =========-->
-            <section class="testimonial">
-              <div class="container">
-                <div class="title">
-                  <h1>What They Say......</h1>
-                </div>
-                <div class="slider">
-                  <div class="slide active">
-                    <p>" Thank you for teaching us to read, to write, and comprehend, thank you for teaching us not to be afraid of a math problem, 
-                      teaching us to “think” and solve problems on our own, for teaching us to advocate for ourselves, for teaching us how to be a
-                       friend. Thank you Intercontinental School Kano "
-                    </p>
-
-                      <div class="client-info">
-                        <h3>Saka Gebu</h3>
-                        <span>Alumni</span>
-                      </div>
+            <!--===== Testimonial starts =======-->
+            <section>
+              <div class="testimonial-section">
+                <div class="inner-width">
+                  <h1>What Our Students Say</h1>
+                  <div class="testimonial-img">
+                    <img src="/home/aslim/interhub/images/1.jpg" alt="test-1" class="active">
+                    <img src="/home/aslim/interhub/images/2.jpg" alt="test-2">
+                    <img src="/home/aslim/interhub/images/3.jpg" alt="test-3">
+                    <img src="/home/aslim/interhub/images/4.jpg" alt="test-4">
                   </div>
 
-                  <div class="slide">
-                    <p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                      Nam ex illum dignissimos corporis, praesentium nisi. "
-                    </p>
+                  <div class="testimonial-contents">
+                    <div class="testimonial active " id="test-1">
+                      <p>"Thank you for teaching us to read, to write, and comprehend, 
+                        thank you for teaching us not to be afraid of a math problem, 
+                        teaching us to “think” and solve problems on our own,
+                        for teaching us to advocate for ourselves, for
+                          teaching us how to be a friend. Thank you Intercontinental 
+                          School Kano"</p>
+                      
+                    </div>
 
-                      <div class="client-info">
-                        <h3>Saka Gebu</h3>
-                        <span>Alumni</span>
-                      </div>
+                    <div class="testimonial" id="test-2">
+                      <p>“Intercontinental School not only focuses on improving areas of need but also really puts a huge emphasis on bolstering 
+                        individual strengths. I have grown in a way that I never would have at another school due to this excellent 
+                      individualized and warm environment. I am so pleased.”</p>
+                      
+                    </div>
+
+                    <div class="testimonial" id="test-3">
+                      <p>“Intercontinental schools kano is a place where pupils/students are
+                        nurtured to become the best among equals.”</p>
+                      
+                    </div>
+
+                    <div class="testimonial" id="test-4">
+                      <p>"Intercontinental schools kano gave me the opportunity and leverage to be better in my academics"</p>
+                      
+                    </div>
                   </div>
-
-                  <div class="slide">
-                    <p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                      Nam ex illum dignissimos corporis, praesentium nisi. "
-                    </p>
-
-                      <div class="client-info">
-                        <h3>Saka Gebu</h3>
-                        <span>Alumni</span>
-                      </div>
-                  </div>
-                  
-                </div>
-                <div class="slider-indicator">
-                  <img src="images/1.jpg" class="active" alt="" data-id="0">
-                  <img src="images/2.jpg" alt=""  data-id="1">
-                  <img src="images/3.jpg" alt=""  data-id="2">
-                  <img src="images/4.jpg" alt="" data-id="3" >
-
                 </div>
               </div>
             </section>
-            <!--======= Testimonies Ends ==========-->
+            <!--===== Testimonial ends =======-->
 
 
 
@@ -461,6 +454,17 @@
                 infinite: true
               })
             </script>
+
+              <script type="text/javascript">
+                $('.testimonial-img img').click(function(){
+                  $(".testimonial-img img").removeClass("active");
+                  $(this).addClass("active");
+
+                  $(".testimonial").removeClass("active");
+                  $("#"+$(this).attr("alt")).addClass("active")
+                })
+                
+              </script>
         </body>
 
 

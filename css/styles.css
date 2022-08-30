@@ -405,6 +405,69 @@ Facilities
     color: whitesmoke;
 }
 
+/*****************************
+
+testimonial 
+
+***************************/
+
+.testimonial-section {
+    background: #f1f1f1;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.testimonial-section .inner-width{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.testimonial-section h1{
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.testimonial-section .testimonial-img{
+    padding: 40px 0;
+}  
+.testimonial-section .testimonial-img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin: 0 20px;
+    filter: grayscale(100%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.testimonial-section .testimonial-img img:hover, .testimonial-img img.active{
+    filter: none;
+}
+.testimonial-section .testimonial-contents{
+    max-width: 600px;
+    margin: auto;
+}
+.testimonial-section  .testimonial{
+    display: none;
+}
+
+.testimonial-section  .testimonial.active{
+    display: block;
+}
+
+.testimonial-section  .testimonial p{
+    color: #5c5c5c;
+    margin-bottom: 30px;
+}
+.testimonial-section  .testimonial .description{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 15px;
+}
+
 
 
 
