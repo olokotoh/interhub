@@ -1,160 +1,187 @@
-body html {
-    background-color: yellow;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-* {
-    box-sizing: border-box;
+input{
+  display: none;
+}
+.containers{
+  width: 100%;
+  text-align: center;
+}
+h1{
+  font-weight: normal;
+  font-size: 35px;
+  position: relative;
+  margin: 40px 0;
+}
+
+h1::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: blue;
+  bottom: -10px;
+  left: 50%;
+transform: translateX(-50%);
+animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0%{
+    width:100px;
   }
-  
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  50%{
+    width: 200px;
   }
-  
-  .header {
-    text-align: center;
-    padding: 32px;
+  100%{
+    width:100px;
   }
-  
-  .row {
-    display: -ms-flexbox; /* IE 10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE 10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create two equal columns that sits next to each other */
-  .column {
-    -ms-flex: 50%; /* IE 10 */
-    flex: 50%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
-  
-  /* Style the buttons */
-  .btn {
-    border: none;
-    outline: none;
-    padding: 10px 16px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-    font-size: 18px;
-  }
-  
-  .btn:hover {
-    background-color: #ddd;
-  }
-  
-  .btn.active {
-    background-color: #666;
-    color: white;
-  }
-  .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
-  }
-  
-  /* Style the images inside the grid */
-  .column img {
-    opacity: 0.8;
-    cursor: pointer;
-  }
-  
-  .column img:hover {
-    opacity: 1;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* The expanding image container (positioning is needed to position the close button and the text) */
-  .container {
-    position: relative;
-    display: none;
-  }
-  
-  /* Expanding image text */
-  #imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-  }
-  
-  /* Closable button inside the image */
-  .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial;
-  }
-  
-  /* The grid: Four equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
-  }
-  
-  /* Style the images inside the grid */
-  .column img {
-    opacity: 0.8; 
-    cursor: pointer; 
-  }
-  
-  .column img:hover {
-    opacity: 1;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* The expanding image container */
-  .container {
-    position: relative;
-    display: none;
-  }
-  
-  /* Expanding image text */
-  #imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-  }
-  
-  /* Closable button inside the expanded image */
-  .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-  }
-  
+}
+
+.top-content{
+  background-color: lightgray;
+  width: 90%;
+  margin: 0, auto 20px, auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px lightgray;
+}
+
+h3{
+  height: 100%;
+  background-color: gray;
+  line-height: 60px;
+  padding: 0 50px;
+  color: whitesmoke
+}
+label{
+  display: inline-block;
+  height: 100%;
+  margin: 0 10px;
+  line-height: 50px;
+  font-size: 20px;
+  color: black
+  cursor: pointer;
+  transition: color.5s;
+}
+label:hover{
+  color: grey;
+}
+.photo-gallery{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.pic{
+  position: relative;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px lightgray;
+  cursor: pointer;
+  transition: .5s;
+}
+.pic img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: 5s;
+}
+.pic::before{
+content: "Image Gallery";
+position: absolute;
+top: 50%;
+left: 50px;
+transform: translate(-50% -50%);
+color:white;
+font-size: 25px;
+font-weight: bold;
+width: 100%;
+margin-top: 100px;
+opacity: 0;
+transition: .3s;
+transition-delay: .2s;
+z-index: 1;
+
+}
+.pic::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  height: 0;
+  background-color: rgba(0, 0, 0, .4);
+  transition: .3s;
+}
+.pic:hover::after{
+height: 100%;
+
+}
+.pic:hover::before{
+  margin-top: 0;
+  opacity: 1;
+}
+#check1:checked~.containers .photo-gallery .pic{
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: .5s;
+}
+#check2:checked~.containers .photo-gallery .con{
+  transform: scale(1);
+  opacity: 1;
+  position: relative;
+}
+#check2:checked~.containers .photo-gallery .Darul,
+#check2:checked~.containers .photo-gallery .place{
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: .0s;
+}
+
+#check3:checked~.containers .photo-gallery .Darul{
+  transform: scale(1);
+  opacity: 1;
+  position: relative;
+}
+#check3:checked~.containers .photo-gallery .con,
+#check3:checked~.containers .photo-gallery .place{
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: .0s;
+}
+
+
+#check4:checked~.containers .photo-gallery .place{
+  transform: scale(1);
+  opacity: 1;
+  position: relative;
+}
+#check4:checked~.containers .photo-gallery .con,
+#check4:checked~.containers .photo-gallery .Darul{
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: .0s;
+}
+.wrapper{
+margin:25px;
+padding: 25px;
+}
+.wrapper h3{
+  text-align: center;
+}
+
+body{
+  background-color: whitesmoke;
+}
