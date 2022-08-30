@@ -364,7 +364,7 @@ Facilities
     content: '';
     border-width: 20px;
     border-style: solid;
-    border-color: rgb(57, 0, 0) whitesmoke rgba(1, 1, 1, 0.4) rgba(0, 0, 0, 0.4);
+    border-color:#5fbff9 #5fbff9 rgba(1, 1, 1, 0.4) rgba(0, 0, 0, 0.4);
     position: absolute;
     right: -40px;
     top: -40px;

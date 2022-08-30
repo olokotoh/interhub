@@ -7,111 +7,80 @@
 
 about section
 ******************************/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-.wrapper{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.background-container{
-    width: 100%;
+.about-section {
     min-height: 100vh;
-    display: flex; 
-}
-.bg-1{
-    flex: 1;
-    background-color: #40b098;
-}
-.bg-2{
-    flex: 1;
-    background-color:#a3e1d4;
-}
-.about-container{
-    width: 85%;
-    min-height: 70vh;
-    position: absolute;
-    background-color: white;
-    box-shadow: 15px 15px 20px #6d8dad;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 20px 40px;
-    border-radius: 5px;
-}
-.image-container{
-    flex: 1;
-    display: flex;
     justify-content: center;
-    align-items: center;
+   
 }
-.image-container img {
-    width: 500px;
-    height: 500px;
-    margin: 20px;
+.about-section .about {
+    background-image: url("/home/aslim/interhub/images/IMG_3831.JPEG");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 55%;
     object-fit: cover;
-    border-radius: 20px;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
 }
-.text-container{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    font-size: 18px;
+
+.about-section .about .inner-section{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 140px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
 }
-.text-container h1{
+
+.about-section .about .inner-section h1 {
+    margin-bottom: 30px;
     font-size: 30px;
-    padding: 40px 0px;
+    font-weight: 900;
 }
-.text-container a{
-    text-decoration: none;
-    padding: 12px;
-    margin: 50px 0px;
-    background-color: #5fbff9;
-    border: 2px solid transparent;
-    color: white;
-    border-radius: 5px;
-    transition: .3s all ease;
+.about-section .about .inner-section text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+
 }
-.text-container a:hover{
-    background-color: transparent;
-    color: black;
-    border: 2px solid lightblue;
+
+@media screen and (max-width:1200px) {
+    .about-section .about .inner-section {
+        padding: 80px;
+    }
+    
 }
-@media screen and (max-width: 1600px){
-    .about-container{
-        width: 90%;
+@media screen and (max-width:1000px) {
+    .about-section .about{
+        background-size: 100%;
+        padding: 100px 40px;
     }
-    .image-container img{
-        width: 300px;
-        height: 300px;
+    .about-section .about .inner-section{
+        width: 100%;
     }
-    .text-container h1{
-        font-size: 50px;
-    }
+    
 }
-@media screen and (max-width: 1100px){
-    .about-container{
-        flex-direction: column;
+
+@media screen and (max-width:600px) {
+    .about-section .about{
+        padding: 0;
     }
-    .image-container img{
-        width: 300px;
-        height: 300px;
+    .about-section .about .inner-section{
+        padding: 60px;
     }
-    .text-container {
-        align-items: center;
-    }
+    
 }
 
 
-.more-info{
+
+/****************
+
+more ingo 
+****************/
+.more-info {
 
     padding-top: 50px ;
 }
